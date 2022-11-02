@@ -1,5 +1,6 @@
 
-alert("Game rules: You have 5 rounds to play")
+alert("Game rules: You have 3 rounds to play. The final result will be displayed in the webpage.")
+alert("Best of luck <3")
 
 const options = ["rock", "paper", "scissors"]
 // geting the computer choice
@@ -18,7 +19,7 @@ function getPlayerSelection() {
 //playing
 function playRound() {
     const computerChoice = getComputerSelection();
-    const playerChoice = getPlayerSelection();
+    const playerChoice = getPlayerSelection().trim();
 
     if (computerChoice === "scissors" && playerChoice === "paper" || computerChoice === "paper" && playerChoice === "rock" || computerChoice === "rock" && playerChoice === "scissors") {
         return 0;
