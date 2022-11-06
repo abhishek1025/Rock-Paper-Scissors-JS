@@ -151,7 +151,7 @@ function restart() {
     }
 }
 
-
+document.querySelector("#playAgain").addEventListener('click', restart)
 
 
 
