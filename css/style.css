@@ -1,0 +1,245 @@
+body {
+  background-color: #90C8BF;
+}
+
+header {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Poor Story', cursive;
+}
+
+header button {
+  height: 60px;
+  width: 200px;
+  border-radius: 17px;
+  font-size: 25px;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header button:hover {
+  background-color: #edeaea;
+}
+
+.gameUI {
+  text-align: center;
+}
+
+.gameUI h1 {
+  font-size: 40px;
+  margin-top: 40px;
+  font-family: 'Xanh Mono', monospace;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.box {
+  width: 35%;
+  height: 350px;
+  background-color: #3a3839;
+}
+
+.box-header {
+  font-size: 25px;
+  padding: 20px 0;
+  background-color: black;
+}
+
+.box-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 75%;
+}
+
+.box-body img {
+  width: 100px;
+}
+
+.choosing-btns {
+  margin-top: 120px;
+}
+
+.choosing-btns button {
+  background-color: black;
+  border: none;
+  width: 180px;
+  height: 60px;
+  font-size: 25px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: white;
+}
+
+.choosing-btns button img {
+  width: 40px;
+}
+
+.choosing-btns button:nth-child(2) {
+  margin: 0 60px;
+}
+
+.round-result {
+  margin: 40px 0;
+  font-size: 25px;
+  height: 30px;
+  color: #d33939;
+}
+
+.pop-up-msg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.msg-content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.msg-content {
+  height: 350px;
+  width: 530px;
+  background-color: #dddada;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.msg-content h1 {
+  font-size: 35px;
+  letter-spacing: 1.4px;
+  margin-top: 0;
+}
+
+.msg-content button {
+  height: 45px;
+  width: 150px;
+  border-radius: 17px;
+  font-size: 18px;
+  background: black;
+  border: 1px solid black;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 20px;
+}
+
+.msg-content button:hover {
+  background: none;
+  color: black;
+}
+
+.msg-content p {
+  margin-top: 40px;
+  font-size: 20px;
+  color: red;
+}
+
+@media (max-width: 767px) and (min-width: 0px) {
+  header h1 {
+    font-size: 70px;
+  }
+  .gameUI {
+    margin-top: 120px;
+  }
+  .wrapper {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .box {
+    height: 200px;
+    width: 49%;
+  }
+  .box-body {
+    height: 66%;
+  }
+  .box-body img {
+    width: 50px;
+  }
+  .choosing-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 60px;
+  }
+  .choosing-btns button {
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+  }
+  .choosing-btns button:nth-child(2) {
+    margin: 0;
+  }
+  .msg-content {
+    width: 80%;
+    height: 250px;
+  }
+  .msg-content p {
+    margin-top: 30px;
+  }
+  .msg-content button {
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
