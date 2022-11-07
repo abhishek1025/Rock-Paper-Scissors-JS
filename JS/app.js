@@ -122,36 +122,35 @@ function playRound(playerChoice, computerChoice) {
 
     totalRound++;
 
-    restart();
-
-}
-
-
-function restart() {
-
     if (totalRound == 5) {
-
-        finalScore.innerHTML = `(You) ${playerScore} - ${compScore} (Computer)`;
-
-        playerScore = 0;
-        compScore = 0;
-        totalRound = 0;
-
-        compScoreEl.innerHTML = `Computer : ${compScore}`;
-        playerScoreEl.innerHTML = `You : ${playerScore}`;
-
-        computerChoiceEL.innerHTML = "";
-        playerChoiceEL.innerHTML = "";
-
-        popUpMsgSection.style.display = "block";
-
+        setTimeout(reset, 1000);
     }
-    else {
-        popUpMsgSection.style.display = "none";
-    }
+
 }
 
-document.querySelector("#playAgain").addEventListener('click', restart)
+
+function reset() {
+
+    finalScore.innerHTML = `(You) ${playerScore} - ${compScore} (Computer)`;
+
+    playerScore = 0;
+    compScore = 0;
+    totalRound = 0;
+
+    compScoreEl.innerHTML = `Computer : ${compScore}`;
+    playerScoreEl.innerHTML = `You : ${playerScore}`;
+
+    computerChoiceEL.innerHTML = "";
+    playerChoiceEL.innerHTML = "";
+
+    popUpMsgSection.style.display = "block";
+
+
+}
+
+document.querySelector("#playAgain").addEventListener('click', () => {
+    popUpMsgSection.style.display = "none";
+})
 
 
 
